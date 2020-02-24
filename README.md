@@ -34,13 +34,14 @@ CppJieba是"结巴(Jieba)"中文分词的C++版本
 ### 下载和编译
 
 ```sh
-git clone --depth=10 --branch=master git://github.com/yanyiwu/cppjieba.git
-cd cppjieba
+git clone --depth=10 --branch=master git://github.com/yanyiwu/cppjieba.git &&
+cd cppjieba 
 mkdir build
-cd build
-cmake ..
-make
+cd build 
+cmake .. 2>&1
+make .
 ```
+Not sure why make cannot run.
 
 有兴趣的可以跑跑测试(可选):
 
