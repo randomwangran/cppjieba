@@ -1,29 +1,3 @@
-# CppJieba [English](README_EN.md)
-
-[![Build Status](https://travis-ci.org/yanyiwu/cppjieba.png?branch=master)](https://travis-ci.org/yanyiwu/cppjieba) 
-[![Author](https://img.shields.io/badge/author-@yanyiwu-blue.svg?style=flat)](http://yanyiwu.com/) 
-[![Donate](https://img.shields.io/badge/donate-eos_git@yanyiwu-orange.svg)](https://eospark.com/account/gitatyanyiwu)
-[![Platform](https://img.shields.io/badge/platform-Linux,%20OS%20X,%20Windows-green.svg?style=flat)](https://github.com/yanyiwu/cppjieba)
-[![Performance](https://img.shields.io/badge/performance-excellent-brightgreen.svg?style=flat)](http://yanyiwu.com/work/2015/06/14/jieba-series-performance-test.html) 
-[![Tag](https://img.shields.io/github/v/tag/yanyiwu/cppjieba.svg)](https://github.com/yanyiwu/cppjieba/releases)
-[![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat)](http://yanyiwu.mit-license.org)
-[![Build status](https://ci.appveyor.com/api/projects/status/wl30fjnm2rhft6ta/branch/master?svg=true)](https://ci.appveyor.com/project/yanyiwu/cppjieba/branch/master)
-
-
-[![logo](http://images.yanyiwu.com/CppJiebaLogo-v1.png)](https://github.com/yanyiwu/cppjieba)
-
-## 简介
-
-CppJieba是"结巴(Jieba)"中文分词的C++版本
-
-## 特性
-
-+ 源代码都写进头文件`include/cppjieba/*.hpp`里，`include`即可使用。
-+ 支持`utf8`编码。
-+ 项目自带较为完善的单元测试，核心功能中文分词(utf8)的稳定性接受过线上环境检验。
-+ 支持载自定义用户词典，多路径时支持分隔符'|'或者';'分隔。
-+ 支持 `Linux` , `Mac OSX`, `Windows` 操作系统。
-
 ## 用法
 
 ### 依赖软件
@@ -215,70 +189,15 @@ Query方法先使用Mix方法切词，对于切出来的较长的词再使用Ful
 
 + [dict.367W.utf8] iLife(562193561 at qq.com)
 
-## 应用
-
-+ [GoJieba] go语言版本的结巴中文分词。
-+ [NodeJieba] Node.js 版本的结巴中文分词。
-+ [simhash] 中文文档的的相似度计算
-+ [exjieba] Erlang 版本的结巴中文分词。
-+ [jiebaR] R语言版本的结巴中文分词。
-+ [cjieba] C语言版本的结巴分词。
-+ [jieba_rb] Ruby 版本的结巴分词。
-+ [iosjieba] iOS 版本的结巴分词。
-+ [SqlJieba] MySQL 全文索引的结巴中文分词插件。
-+ [pg_jieba] PostgreSQL 数据库的分词插件。
-+ [gitbook-plugin-search-pro] 支持中文搜索的 gitbook 插件。
-+ [ngx_http_cppjieba_module] Nginx 分词插件。
-+ [cppjiebapy] 由 [jannson] 开发的供 python 模块调用的项目 [cppjiebapy], 相关讨论 [cppjiebapy_discussion] .
-+ [cppjieba-py] 由 [bung87] 基于 pybind11 封装的 python 模块,使用体验上接近于原jieba。
-+ [KeywordServer] 50行搭建一个中文关键词抽取服务。
-+ [cppjieba-server] CppJieba HTTP 服务器。
-+ [phpjieba] php版本的结巴分词扩展。
-+ [perl5-jieba] Perl版本的结巴分词扩展。
-+ [jieba-dlang] D 语言的结巴分词 Deimos Bindings。
 
 ## 线上演示
 
 [Web-Demo](http://cppjieba-webdemo.herokuapp.com/)
-(建议使用chrome打开)
+
 
 ## 性能评测
 
 [Jieba中文分词系列性能评测]
 
 ## Contributors
-
-### Code Contributors
-
-This project exists thanks to all the people who contribute.
-<a href="https://github.com/yanyiwu/cppjieba/graphs/contributors"><img src="https://opencollective.com/cppjieba/contributors.svg?width=890&button=false" /></a>
-
-[GoJieba]:https://github.com/yanyiwu/gojieba
-[CppJieba]:https://github.com/yanyiwu/cppjieba
-[jannson]:https://github.com/jannson
-[cppjiebapy]:https://github.com/jannson/cppjiebapy
-[bung87]:https://github.com/bung87
-[cppjieba-py]:https://github.com/bung87/cppjieba-py
-[cppjiebapy_discussion]:https://github.com/yanyiwu/cppjieba/issues/1
-[NodeJieba]:https://github.com/yanyiwu/nodejieba
-[jiebaR]:https://github.com/qinwf/jiebaR
-[simhash]:https://github.com/yanyiwu/simhash
-[代码详解]:https://github.com/yanyiwu/cppjieba/wiki/CppJieba%E4%BB%A3%E7%A0%81%E8%AF%A6%E8%A7%A3
-[issue25]:https://github.com/yanyiwu/cppjieba/issues/25
-[exjieba]:https://github.com/falood/exjieba
-[KeywordServer]:https://github.com/yanyiwu/keyword_server
-[ngx_http_cppjieba_module]:https://github.com/yanyiwu/ngx_http_cppjieba_module
-[dict.367W.utf8]:https://github.com/qinwf/BigDict
-[cjieba]:http://github.com/yanyiwu/cjieba
-[jieba_rb]:https://github.com/altkatz/jieba_rb
-[iosjieba]:https://github.com/yanyiwu/iosjieba
-[SqlJieba]:https://github.com/yanyiwu/sqljieba
-[Jieba中文分词系列性能评测]:http://yanyiwu.com/work/2015/06/14/jieba-series-performance-test.html
-[pg_jieba]:https://github.com/jaiminpan/pg_jieba
-[gitbook-plugin-search-pro]:https://plugins.gitbook.com/plugin/search-pro
-[cppjieba-server]:https://github.com/yanyiwu/cppjieba-server
-[phpjieba]:https://github.com/jonnywang/phpjieba
-[perl5-jieba]:https://metacpan.org/pod/distribution/Lingua-ZH-Jieba/lib/Lingua/ZH/Jieba.pod
-[jieba-dlang]:https://github.com/shove70/jieba
-
 
